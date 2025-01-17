@@ -11,7 +11,7 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Textarea } from '@/components/ui/textarea';
 import { useKanbanStore } from '@/store/kanbanStore';
-import { Plus } from 'react-icons/hi';
+import { HiPlus } from 'react-icons/hi';
 
 interface AddCardDialogProps {
   columnId: string;
@@ -37,7 +37,7 @@ export function AddCardDialog({ columnId }: AddCardDialogProps) {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button variant="ghost" size="sm">
-          <Plus className="mr-2 h-4 w-4" />
+          <HiPlus className="mr-2 h-4 w-4" />
           Add Card
         </Button>
       </DialogTrigger>
