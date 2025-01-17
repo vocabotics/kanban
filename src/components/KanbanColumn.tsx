@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { HiTrash2 } from 'react-icons/hi';
+import { HiOutlineTrash } from 'react-icons/hi';
 import { useKanbanStore } from '@/store/kanbanStore';
 import { KanbanCard } from './KanbanCard';
 import { AddCardDialog } from './AddCardDialog';
@@ -49,7 +49,7 @@ export function KanbanColumn({ column }: KanbanColumnProps) {
               size="icon"
               onClick={() => removeColumn(column.id)}
             >
-              <HiTrash2 className="h-4 w-4" />
+              <HiOutlineTrash className="h-4 w-4" />
             </Button>
           </div>
           <AddCardDialog columnId={column.id} />
