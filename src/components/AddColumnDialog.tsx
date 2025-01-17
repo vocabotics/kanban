@@ -10,7 +10,7 @@ import {
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { useKanbanStore } from '@/store/kanbanStore';
-import { Plus } from 'react-icons/hi';
+import { HiPlus } from 'react-icons/hi';
 
 export function AddColumnDialog() {
   const [open, setOpen] = useState(false);
@@ -30,7 +30,7 @@ export function AddColumnDialog() {
     <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button variant="outline">
-          <Plus className="mr-2 h-4 w-4" />
+          <HiPlus className="mr-2 h-4 w-4" />
           Add Column
         </Button>
       </DialogTrigger>
