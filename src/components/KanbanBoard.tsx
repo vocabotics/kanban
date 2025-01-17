@@ -2,12 +2,14 @@ import { ScrollArea } from '@/components/ui/scroll-area';
 import { useKanbanStore } from '@/store/kanbanStore';
 import { KanbanColumn } from './KanbanColumn';
 import { AddColumnDialog } from './AddColumnDialog';
+import { ChristmasLights } from './ChristmasLights';
 
 export function KanbanBoard() {
   const columns = useKanbanStore((state) => state.columns);
 
   return (
     <div className="flex h-full flex-col gap-4 p-4">
+      <ChristmasLights />
       <div className="flex items-center justify-between">
         <h1 className="text-2xl font-bold">Kanban Board</h1>
         <AddColumnDialog />
