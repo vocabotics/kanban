@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import { Card, CardHeader, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Trash2 } from 'react-icons/hi';
+import { HiTrash } from 'react-icons/hi';
 import { useKanbanStore } from '@/store/kanbanStore';
 import type { Card as CardType } from '@/types/kanban';
 
@@ -36,7 +36,7 @@ export function KanbanCard({ card, columnId }: KanbanCardProps) {
               className="opacity-0 group-hover:opacity-100"
               onClick={() => removeCard(columnId, card.id)}
             >
-              <Trash2 className="h-4 w-4" />
+              <HiTrash className="h-4 w-4" />
             </Button>
           </div>
         </CardHeader>
