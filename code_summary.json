@@ -1,0 +1,42 @@
+{
+  "directories": [
+    "src/",
+    "src/components/",
+    "src/store/",
+    "src/types/"
+  ],
+  "files": [
+    "src/types/kanban.ts",
+    "src/store/kanbanStore.ts",
+    "src/components/AddColumnDialog.tsx",
+    "src/components/AddCardDialog.tsx",
+    "src/components/KanbanCard.tsx",
+    "src/components/KanbanColumn.tsx",
+    "src/components/KanbanBoard.tsx",
+    "src/App.tsx"
+  ],
+  "components": [
+    "AddColumnDialog",
+    "AddCardDialog",
+    "KanbanCard",
+    "KanbanColumn",
+    "KanbanBoard"
+  ],
+  "types": [
+    "Card",
+    "Column",
+    "KanbanState"
+  ],
+  "stores": [
+    "useKanbanStore"
+  ],
+  "features": [
+    "Drag and drop cards between columns",
+    "Add/remove columns",
+    "Add/remove cards",
+    "Card descriptions",
+    "Responsive layout",
+    "Animations",
+    "Theme support"
+  ]
+}
